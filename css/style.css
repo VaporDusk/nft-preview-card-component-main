@@ -1,0 +1,148 @@
+html {
+  font-family: 'Outfit', sans-serif;
+}
+body {
+  margin: 0;
+}
+h1, p {
+  margin-block: 0;
+  margin-inline: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+main {
+  padding: 62px 0;
+  background-color: hsl(217, 54%, 11%);
+}
+.equilibrium {
+  max-width: 279px;
+  padding: 24px 24px 20px;
+  margin: auto;
+  color: hsl(215, 51%, 70%);
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 18px;
+}
+.equilibrium-images {
+  position: relative;
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: hsl(178, 100%, 50%);
+  margin: 0 0 26px;
+}
+.equilibrium-images-equilibrium {
+  display: block;
+  width: 100%;
+}
+.equilibrium-images-view {
+  visibility: hidden;
+  position: absolute;
+  top: 115.5px;
+  left: 115.5px;
+}
+.equilibrium-images:hover .equilibrium-images-view {
+  visibility: visible;
+}
+.equilibrium-images:hover .equilibrium-images-equilibrium {
+  opacity: 0.5;
+}
+.equilibrium-header {
+  font-size: 21px;
+  color: hsl(0, 0%, 100%);
+  margin: 0 0 14px;
+}
+.equilibrium-header:hover {
+  color: hsl(178, 100%, 50%);
+}
+.equilibrium-text {
+  font-size: 1rem;
+  line-height: 26px;
+  margin: 0 0 16px;
+}
+.equilibrium-data {
+  margin: 0 0 16px 0;
+}
+.equilibrium-data-location-icon {
+  margin: 0px 2px 0 0;
+}
+.equilibrium-data-location-data {
+  font-size: 15px;
+  color: hsl(178, 100%, 50%);
+  vertical-align: top;
+  margin: 0 92px 0 0;
+}
+.equilibrium-data-time-data {
+  font-size: 0.9375rem;
+  vertical-align: top;
+  margin: 0 0 0 3px;
+}
+.equilibrium-data::after {
+  content: "";
+  display: block;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  margin: 12px 0 0 0;
+}
+.equilibrium-author-avatar {
+  box-sizing: border-box;
+  width: 33px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.equilibrium-author-text {
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: -0.2px;
+  vertical-align: top;
+  margin: 8px 11px 0;
+}
+.equilibrium-author-name {
+  color: hsl(0, 0%, 100%);
+}
+.equilibrium-author-name:hover {
+  color: hsl(178, 100%, 50%);
+}
+@media screen and (min-width: 1440px) {
+  main {
+    padding: 152px;
+  }
+  .equilibrium {
+    max-width: 302px;
+    padding: 24px 24px 27px;
+  }
+  .equilibrium-images-view {
+    top: 127px;
+    left: 127px;
+  }
+  .equilibrium-images:hover .equilibrium-images-view {
+    visibility: visible;
+  }
+  .equilibrium-images:hover .equilibrium-images-equilibrium {
+    opacity: 0.5;
+  }
+  .equilibrium-header {
+    margin: 0 0 17px;
+  }
+  .equilibrium-text {
+    font-size: 1.125rem;
+    margin: 0 0 24px;
+  }
+  .equilibrium-data-location-icon {
+    margin: 0px 3px 0 0;
+  }
+  .equilibrium-data-location-data {
+    letter-spacing: 0.3px;
+    margin: 0 106px 0 0;
+  }
+  .equilibrium-data-time-data {
+    display: inline-block;
+    letter-spacing: 0.5px;
+    margin: 1px 0 0 3px;
+  }
+  .equilibrium-data::after {
+    margin: 21px 0 0 0;
+  }
+  .equilibrium-author-text {
+    letter-spacing: 0.2px;
+  }
+}
